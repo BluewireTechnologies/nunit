@@ -353,7 +353,16 @@ namespace NUnit.Framework.Internal.Execution
 
             Context.Listener.TestFinished(Result);
 
-            Completed?.Invoke(this, EventArgs.Empty);
+            try
+            {
+                Completed?.Invoke(this, EventArgs.Empty);
+            }
+            catch (Exception ex)
+            {
+                Context.Listener.TestOutput(
+                    new TestOutput(
+                        String.Format("{0}{1}{2}", "Unhandled exception during completion of test runs:", Environment.NewLine, ex), "Error", null, ""));
+            }
             _completionEvent.Set();
 
             //Clear references to test objects to reduce memory usage
