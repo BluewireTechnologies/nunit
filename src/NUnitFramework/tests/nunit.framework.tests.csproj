@@ -16,6 +16,7 @@
     <ProjectReference Include="..\framework\nunit.framework.csproj" />
     <ProjectReference Include="..\slow-tests\slow-nunit-tests.csproj" />
     <ProjectReference Include="..\testdata\nunit.testdata.csproj" />
+    <ProjectReference Include="..\testdata.failingassemblyaction\nunit.testdata.failingassemblyaction.csproj" />
     <ProjectReference Include="..\mock-assembly\mock-assembly.csproj" />
   </ItemGroup>
 

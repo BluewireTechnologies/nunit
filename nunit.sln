@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "slow-nunit-tests", "src\NUn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit.testdata", "src\NUnitFramework\testdata\nunit.testdata.csproj", "{C17BD8D8-1A77-4568-9579-0528B801566A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit.testdata.failingassemblyaction", "src\NUnitFramework\testdata.failingassemblyaction\nunit.testdata.failingassemblyaction.csproj", "{2A1830DF-D938-466E-87F9-A58BB9BD5300}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit.framework.tests", "src\NUnitFramework\tests\nunit.framework.tests.csproj", "{79683236-E036-462A-A79A-CA6731F19208}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunitlite.tests", "src\NUnitFramework\nunitlite.tests\nunitlite.tests.csproj", "{834A2B6C-2CAC-4486-83BC-55F41EE476BA}"
@@ -81,6 +83,10 @@ Global
 		{C17BD8D8-1A77-4568-9579-0528B801566A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17BD8D8-1A77-4568-9579-0528B801566A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17BD8D8-1A77-4568-9579-0528B801566A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1830DF-D938-466E-87F9-A58BB9BD5300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1830DF-D938-466E-87F9-A58BB9BD5300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1830DF-D938-466E-87F9-A58BB9BD5300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1830DF-D938-466E-87F9-A58BB9BD5300}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79683236-E036-462A-A79A-CA6731F19208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79683236-E036-462A-A79A-CA6731F19208}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79683236-E036-462A-A79A-CA6731F19208}.Release|Any CPU.ActiveCfg = Release|Any CPU
