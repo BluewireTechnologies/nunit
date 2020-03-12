@@ -50,7 +50,14 @@ namespace NUnit.Framework.Internal.Commands
                 {
                     var oldCount = context.CurrentResult.AssertionResults.Count;
 
-                    action.AfterTest(Test);
+                    try
+                    {
+                        action.AfterTest(Test);
+                    }
+                    catch (Exception ex)
+                    {
+                        context.CurrentResult.RecordTearDownException(ex);
+                    }
 
                     // If there are new assertion results here, they are warnings issued
                     // in teardown. Redo test completion so they are listed properly.
